@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms & Input</title>
+  </head>
+  <body>
+    <form action="process.php">
+        <!-- Text -->
+      <div>
+        <label for="name">Name</label><br />
+        <input type="text" id="name" value="Dmytro Fd"/>
+      </div>
+      <!-- Email -->
+      <div>
+        <label for="email">Email</label><br />
+        <input type="email" name="email" id="email" placeholder="Enter an email" />
+      </div>
+      <!-- Textarea -->
+      <div>
+        <label for="message">Message</label><br />
+        <textarea name="message" id="message" cols="50" rows="5"></textarea>
+      </div>
+      <!-- Select -->
+      <div>
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+          <option value="male">Male</option>
+          <option value="female" selected >Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <!-- Number -->
+      <div>
+        <label for="age">Age</label><br>
+        <input type="number" name="age" id="age">
+      </div>
+      <!-- Date -->
+      <div>
+        <label for="birthdate">Birthdate</label><br>
+        <input type="date" name="birthdate" id="birthdate">
+      </div>
+      <!-- Radio -->
+      <div>
+        <label for="membership">Membership</label><br>
+        <input type="radio" name="membership" value="simple" id="membership" checked> Simple<br>
+        <input type="radio" name="membership" value="stadart" id="membership"> Stadart<br>
+        <input type="radio" name="membership" value="mega" id="membership"> Mega<br>
+      </div>
+      <!-- Checkbox -->
+      <div>
+        <label for="membership">I am - </label><br>
+        <input type="checkbox" name="likes" value="Bike" id="likes" checked> Bike <br>
+        <input type="checkbox" name="likes" value="Car" id="likes"> Car<br>
+        <input type="checkbox" name="likes" value="Bus" id="likes"> Bus<br>
+      </div>
+      <!-- Input submit -->
+      <input type="submit" value="Submite">
+      <!-- Button submit -->
+      <!-- <button type="submit">Submite</button> -->
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
